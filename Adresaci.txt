@@ -1,0 +1,8 @@
+1|1|Lukasz|Stepien|513903484|stepone32@interia.pl|Lublin,|
+1|1|Ania|Koltun|332|aniss|harn|
+1|1|Pawel|Staroch|762882|star@o2.pl|Majdan|
+1|1|Michal|Staroch|821381|star2@|Pio|
+1|1|Lena|Stepien|aa|a|a|
+2|1|Ww|Ww|e|e|e|
+2|1|Wo|Ww|w|w|w|
+2|0|Alan|Bradley|332|soft@gmial.com|Lublin|
