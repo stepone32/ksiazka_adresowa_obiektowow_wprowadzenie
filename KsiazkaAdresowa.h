@@ -17,17 +17,19 @@ class KsiazkaAdresowa
 
 UzytkownikMenedzer uzytkownikMenedzer;
 AdresatMenedzer *adresatMenedzer;
-const string nazwaPlikuZAdresatami;
+const string NAZWA_PLIKU_Z_ADRESATAMI;
 
 public:
-    KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string NAZWAPLIKUZADRESATAMI): uzytkownikMenedzer(nazwaPlikuZUzytkownikami), nazwaPlikuZAdresatami(NAZWAPLIKUZADRESATAMI)
+    KsiazkaAdresowa(string nazwaPlikuZUzytkownikami, string nazwaPlikuZAdresatami)
+    : uzytkownikMenedzer(nazwaPlikuZUzytkownikami), NAZWA_PLIKU_Z_ADRESATAMI(nazwaPlikuZAdresatami)
     {
-            uzytkownikMenedzer.wczytajUzytkownikowZPliku();
+        adresatMenedzer = NULL;
     };
 
    ~KsiazkaAdresowa()
     {
         delete adresatMenedzer;
+        adresatMenedzer = NULL;
     }
 
 
