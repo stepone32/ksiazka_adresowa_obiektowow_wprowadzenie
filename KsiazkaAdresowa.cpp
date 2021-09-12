@@ -13,13 +13,19 @@ void KsiazkaAdresowa::wypiszWszystkichUzytkownikow()
 void KsiazkaAdresowa::logowanieUzytkownika()
 {
     uzytkownikMenedzer.logowanieUzytkownika();
-    adresatMenedzer = new AdresatMenedzer (nazwaPlikuZAdresatami, uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika());
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+        adresatMenedzer = new AdresatMenedzer(NAZWA_PLIKU_Z_ADRESATAMI, uzytkownikMenedzer.pobierzIdZalogowanegoUzytkownika());
+    }
 
 }
 
 void KsiazkaAdresowa::dodajAdresata()
 {
-        adresatMenedzer->dodajAdresata();
+    if (uzytkownikMenedzer.czyUzytkownikJestZalogowany())
+    {
+       adresatMenedzer->dodajAdresata();
+    }
 }
 
 void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
@@ -41,4 +47,6 @@ void KsiazkaAdresowa::zapiszWszystkichUzytkownikowDoPliku()
 void KsiazkaAdresowa::wylogujUzytkownika()
 {
     uzytkownikMenedzer.wylogujUzytkownika();
+    delete adresatMenedzer;
+    adresatMenedzer = NULL;
 }

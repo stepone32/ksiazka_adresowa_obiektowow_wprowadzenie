@@ -14,25 +14,24 @@
 
 class AdresatMenedzer
 {
-    const int idZalogowanegoUzytkownika;
+    const int ID_ZALOGOWANEGO_UZYTKOWNIKA;
 
     Adresat podajDaneNowegoAdresata();
     vector <Adresat> adresaci;
     PlikZAdresatami plikZAdresatami;
-    string zamienPierwszaLitereNaDuzaAPozostaleNaMale(string tekst);
-    string zamienDaneAdresataNaLinieZDanymiOddzielonymiPionowymiKreskami(Adresat adresat);
-
-public:
-    AdresatMenedzer(string nazwaPlikuZAdresatami,int IDZALOGOWANEGOUZYTKOWNIKA):
-        plikZAdresatami(nazwaPlikuZAdresatami), idZalogowanegoUzytkownika(IDZALOGOWANEGOUZYTKOWNIKA)
-    {
-        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(idZalogowanegoUzytkownika);
-    };
-    void dodajAdresata();
-    void wyswietlWszystkichAdresatow();
     void wyswietlDaneAdresata(Adresat adresat);
 
 
+
+
+public:
+    AdresatMenedzer(string nazwaPlikuZAdresatami,int idZalogowanegoUzytkownika):
+        plikZAdresatami(nazwaPlikuZAdresatami), ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika)
+    {
+        adresaci = plikZAdresatami.wczytajAdresatowZalogowanegoUzytkownikaZPliku(ID_ZALOGOWANEGO_UZYTKOWNIKA);
+    };
+    void dodajAdresata();
+    void wyswietlWszystkichAdresatow();
 
 
 };
