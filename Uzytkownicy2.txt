@@ -4,3 +4,4 @@
 4|janek|876|
 5|Jadwiga|342|
 6|Katarzyna|883|
+7|michal|900|
