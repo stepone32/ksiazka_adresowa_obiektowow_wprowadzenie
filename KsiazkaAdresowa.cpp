@@ -33,11 +33,21 @@ void KsiazkaAdresowa::wyswietlWszystkichAdresatow()
     adresatMenedzer->wyswietlWszystkichAdresatow();
 }
 
+void KsiazkaAdresowa::edytujAdresata()
+{
+     adresatMenedzer->edytujAdresata();
+}
+
+
+void KsiazkaAdresowa::usunAdresata()
+{
+     adresatMenedzer->usunAdresata();
+}
+
 void KsiazkaAdresowa::zmianaHaslaZalogowanegoUzytkownika()
 {
     uzytkownikMenedzer.zmianaHaslaZalogowanegoUzytkownika();
 }
-
 
 void KsiazkaAdresowa::zapiszWszystkichUzytkownikowDoPliku()
 {

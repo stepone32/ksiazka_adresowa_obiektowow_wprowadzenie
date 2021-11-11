@@ -40,6 +40,8 @@ public:
     void wyswietlWszystkichAdresatow();
     void zmianaHaslaZalogowanegoUzytkownika();
     void zapiszWszystkichUzytkownikowDoPliku();
+    void edytujAdresata();
+    void usunAdresata();
     void wylogujUzytkownika();
 
 };

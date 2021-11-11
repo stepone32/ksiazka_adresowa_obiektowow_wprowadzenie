@@ -22,8 +22,6 @@ class AdresatMenedzer
     void wyswietlDaneAdresata(Adresat adresat);
 
 
-
-
 public:
     AdresatMenedzer(string nazwaPlikuZAdresatami,int idZalogowanegoUzytkownika):
         plikZAdresatami(nazwaPlikuZAdresatami), ID_ZALOGOWANEGO_UZYTKOWNIKA(idZalogowanegoUzytkownika)
@@ -32,7 +30,11 @@ public:
     };
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
+    char wybierzOpcjeZMenuEdycja();
+    void edytujAdresata();
+    int usunAdresata();
 
+    //int podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsuwanegoAdresata, int idOstatniegoAdresata);
 
 };
 
