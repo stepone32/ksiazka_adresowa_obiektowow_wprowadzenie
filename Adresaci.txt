@@ -1,4 +1,5 @@
-3|1|Sd|||||
-4|1|Sd|||||
-6|1|Ladnie|||||
-7|1|Helka|||||
+1|1|Jan|ee|rr|rr|rr|
+2|1|Aas|Sa|dsd|dx|sa|
+3|1|we|ee|rr|rr|rr|
+4|1|Aas|Sa|dsd|dx|sa|
+5|1|Karol|Milczarek||||

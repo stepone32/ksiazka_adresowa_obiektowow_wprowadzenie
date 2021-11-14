@@ -34,8 +34,6 @@ public:
     void edytujAdresata();
     int usunAdresata();
 
-    //int podajIdOstatniegoAdresataPoUsunieciuWybranegoAdresata(int idUsuwanegoAdresata, int idOstatniegoAdresata);
-
 };
 
 #endif //ADRESATMENEDZER_H
