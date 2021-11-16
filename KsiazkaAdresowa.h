@@ -33,16 +33,22 @@ public:
     }
 
 
+    bool czyUzytkownikJestZalogowany();
+    char wybierzOpcjeZMenuGlownego();
+    char wybierzOpcjeZMenuUzytkownika();
     void rejestracjaUzytkownika();
     void wypiszWszystkichUzytkownikow();
     void logowanieUzytkownika();
-    void dodajAdresata();
-    void wyswietlWszystkichAdresatow();
     void zmianaHaslaZalogowanegoUzytkownika();
-    void zapiszWszystkichUzytkownikowDoPliku();
+    void wylogujUzytkownika();
+
+    void dodajAdresata();
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
+    void wyswietlWszystkichAdresatow();
     void edytujAdresata();
     void usunAdresata();
-    void wylogujUzytkownika();
+
 
 };
 

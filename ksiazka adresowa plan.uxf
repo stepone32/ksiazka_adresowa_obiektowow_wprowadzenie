@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>711</x>
-      <y>198</y>
+      <y>207</y>
       <w>108</w>
       <h>99</h>
     </coordinates>
@@ -22,7 +22,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>405</x>
-      <y>198</y>
+      <y>207</y>
       <w>297</w>
       <h>270</h>
     </coordinates>
@@ -52,7 +52,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>846</x>
-      <y>162</y>
+      <y>171</y>
       <w>504</w>
       <h>153</h>
     </coordinates>
@@ -72,7 +72,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>900</x>
-      <y>585</y>
+      <y>594</y>
       <w>207</w>
       <h>126</h>
     </coordinates>
@@ -89,9 +89,9 @@
     <id>UMLClass</id>
     <coordinates>
       <x>81</x>
-      <y>198</y>
+      <y>207</y>
       <w>279</w>
-      <h>252</h>
+      <h>315</h>
     </coordinates>
     <panel_attributes>KsiazkaAdresowa
 --
@@ -101,16 +101,20 @@
 --
 + KsiazkaAdresowa()
 +~KsiazkaAdresowa()
++ czyUzytkownikJestZalogowany():Bool
++ wybierzOpcjeZMenuGlownego():Char
++ wybierzOpcjeZMenuUzytkownika():Char
 + rejestracjaUzytkownika():void
 + wypiszWszystkichUzytkownikow():void
 + logowanieUzytkownika():void
-+ dodajAdresta():void
-+ wyswietlWszytskichAdresatow():void
 + zmianaHaslaZalogowanegoUzytkownika():void
-+ zapiszWszystkichUzytkownikowDoPliku() :void
++ wylogujUzytkownika() : Integer
++ dodajAdresta():void
++ wyszukajAdresatowPoImieniu():void
++ wyszukajAdresatowPoNazwisku():void
++ wyswietlWszytskichAdresatow():void
 + edytujAdresata():void
 + usunAdresata():void
-+ wylogujUzytkownika() : Integer
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -118,9 +122,9 @@
     <id>UMLClass</id>
     <coordinates>
       <x>387</x>
-      <y>585</y>
+      <y>594</y>
       <w>477</w>
-      <h>180</h>
+      <h>243</h>
     </coordinates>
     <panel_attributes>AdresatMenedzer
 --
@@ -131,6 +135,10 @@
 + AdresatMeneger()
 + dodajAdresata() : Integer
 + wyswietlWszystkichAdresatow() : void
++ wyszukajAdresatowPoImieniu(): void
++ wyszukajAdresatowPoNazwisku(): void
++ wyswietlIloscWyszukanychAdresatow():void
++ char wybierzOpcjeZMenuEdycja();
 + edytujAdresata():void
 + usunAdresata():Integer
 - wyswietlDaneAdresata(): void
@@ -142,7 +150,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>846</x>
-      <y>324</y>
+      <y>333</y>
       <w>504</w>
       <h>252</h>
     </coordinates>
@@ -171,7 +179,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>225</x>
-      <y>585</y>
+      <y>594</y>
       <w>153</w>
       <h>153</h>
     </coordinates>
@@ -191,7 +199,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>846</x>
-      <y>54</y>
+      <y>63</y>
       <w>504</w>
       <h>99</h>
     </coordinates>
