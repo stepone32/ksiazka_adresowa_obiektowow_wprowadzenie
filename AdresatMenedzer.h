@@ -30,9 +30,13 @@ public:
     };
     void dodajAdresata();
     void wyswietlWszystkichAdresatow();
+    void wyszukajAdresatowPoImieniu();
+    void wyszukajAdresatowPoNazwisku();
+    void wyswietlIloscWyszukanychAdresatow(int iloscAdresatow);
+
     char wybierzOpcjeZMenuEdycja();
     void edytujAdresata();
-    int usunAdresata();
+    int  usunAdresata();
 
 };
 

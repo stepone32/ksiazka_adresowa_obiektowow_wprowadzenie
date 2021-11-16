@@ -3,4 +3,5 @@
 3|1|Julka|Sa|dsd|dx|sa|
 4|1|Aas|Sa|dsd|dx|sa|
 5|1|Karol|Milczarek||||
-6|1|Ostatni|||||
+6|1|Pierwszy|||||
+7|1|Franek kimono|||||
